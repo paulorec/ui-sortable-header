@@ -5,24 +5,53 @@
     <title>ui-sortable-header</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" charset="utf-8"></script>
     <script src="js/ui-sortable-header.js" charset="utf-8"></script>
-
+    <script src="js/ui-sortable-header-example.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/css.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body ng-app="uiSortableHeader">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-12" ng-controller="uiSortableHeaderExample as example">
 
-    <table>
-      <thead ui-sortable-group>
-        <tr>
-          <th ui-sortable-field="city">
-            City
-          </th>
-          <th ui-sortable-field="mayor">
-            Mayor
-          </th>
-          <th ui-sortable-field="population">
-            Population
-          </th>
-        </tr>
-      </thead>
-    </table>
+          <div class="panel panel-default">
+            <div class="panel-heading">EXAMPLE</div>
+            <div class="panel-body">
+              Click on the table header to sort rows.
+            </div>
+          </div>
+
+          <table class="table">
+            <thead ui-sortable-group>
+              <tr>
+                <th ui-sortable-field="city">
+                  City
+                </th>
+                <th ui-sortable-field="mayor">
+                  Mayor
+                </th>
+                <th ui-sortable-field="population">
+                  Population
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="row in example.cities">
+                <td>
+                  {{row.name}}
+                </td>
+                <td>
+                  {{row.mayor}}
+                </td>
+                <td>
+                  {{row.population}}
+                </td>
+              </tr>
+
+            <tbody>
+          </table>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

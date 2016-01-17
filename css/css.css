@@ -1,0 +1,16 @@
+.ui-sortable-field {
+  cursor:pointer;
+}
+
+.ui-sortable-field-asc {
+
+}
+.ui-sortable-field-desc {
+
+}
+.ui-sortable-field-asc::after {
+  content: " v";
+}
+.ui-sortable-field-desc::after {
+  content: " ^";
+}
