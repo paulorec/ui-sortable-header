@@ -10,7 +10,8 @@ Easily sort your table header using this angular directive.
     <script src="js/ui-sortable-header-example.js" charset="utf-8"></script>
     
 
-Include the module `uiSortableHeader`
+Include the module `uiSortableHeader` to your app.module
+
 Add `ui-sortable-group` to the section you want to sort
 
 Add `ui-sortable-group-refresh` and pass your `refresh function` to implement your logic and update your models.
