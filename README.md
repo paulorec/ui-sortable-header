@@ -1,7 +1,7 @@
 ## Angular sortable header
 
 
-Easily sort your table header using this angular directive.
+Easily sort your table data using this angular directive.
 
 ### How to
 
