@@ -7,12 +7,12 @@ Easily sort your table header using this angular directive.
 
  Include the js file
  
-          <script src="js/ui-sortable-header-example.js" charset="utf-8"></script>
-          
+    <script src="js/ui-sortable-header-example.js" charset="utf-8"></script>
+    
 
-Add ui-sortable-group to the section you want to sort
+Add `ui-sortable-group` to the section you want to sort
 
-Add ui-sortable-group-refresh and pass your refresh function to implement your logic and update your models.
+Add `ui-sortable-group-refresh` and pass your `refresh function` to implement your logic and update your models.
 
 ### Example
 your html:
