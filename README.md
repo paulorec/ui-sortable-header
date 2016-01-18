@@ -1,4 +1,4 @@
-## ui-sortable-header
+## Angular sortable header
 
 
 Easily sort your table header using this angular directive.
